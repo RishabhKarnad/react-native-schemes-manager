@@ -130,8 +130,8 @@ BUNDLE_FILE="$DEST/main.jsbundle"
 
 # XCode randomly generates user specific workspace files whenever it feels like it.
 # We want these hidden at all times, so go ahead and clean up if they're showing now.
-cd "$SCHEMES_MANAGER_DIR/../.."
-$NODE_BINARY "$SCHEMES_MANAGER_DIR/index.js" hide-library-schemes
+# cd "$SCHEMES_MANAGER_DIR/../.."
+# $NODE_BINARY "$SCHEMES_MANAGER_DIR/index.js" hide-library-schemes
 
 if [[ $DEV != true && ! -f "$BUNDLE_FILE" ]]; then
   echo "error: File $BUNDLE_FILE does not exist. This must be a bug with" >&2
